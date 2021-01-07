@@ -14,7 +14,7 @@ public class JSONFileHandler implements MyFileHandler{
 
     public void write(){
         try {
-            FileWriter file = new FileWriter("/Users/pranavkelkar/Downloads/GENemployee.json");
+            FileWriter file = new FileWriter("/Users/Abhishek/Downloads/GENemployee.json");
             MyCollection instance = MyCollection.getInstance();
             Employee emp;
 
@@ -48,7 +48,7 @@ public class JSONFileHandler implements MyFileHandler{
     {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("/Users/pranavkelkar/Downloads/employee.json"))
+        try (FileReader reader = new FileReader("/Users/Abhishek/Downloads/employee.json"))
         {
             //Read JSON file
             Object obj = jsonParser.parse(reader);
