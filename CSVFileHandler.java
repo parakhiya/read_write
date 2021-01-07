@@ -12,7 +12,7 @@ public class CSVFileHandler implements MyFileHandler{
         MyCollection instance = MyCollection.getInstance();
 
         try {
-            scanner = new Scanner(new File("/Users/pranavkelkar/Downloads/employee.csv"));
+            scanner = new Scanner(new File("/Users/Abhishek/Downloads/employee.csv"));
             Scanner dataScanner = null;
             int index = 0;
             while (scanner.hasNextLine()) {
@@ -48,7 +48,7 @@ public class CSVFileHandler implements MyFileHandler{
     }
 
     public void write(){
-        File file = new File("/Users/pranavkelkar/Downloads/GENemployee.csv");
+        File file = new File("/Users/Abhishek/Downloads/GENemployee.csv");
         try {
             FileWriter outputfile = new FileWriter(file);
             CSVWriter writer = new CSVWriter(outputfile);
